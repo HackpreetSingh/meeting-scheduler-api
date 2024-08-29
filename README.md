@@ -45,7 +45,7 @@ Meeting scheduler REST API.
 
 ## Sample Postman Curls to test the API
 
-### 1. Schedule a Meeting with From-To Time {#1-schedule-a-meeting-with-from-to-time}
+### 1. Schedule a Meeting with From-To Time
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
@@ -63,13 +63,13 @@ curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
 }'
 ```
 
-### 2. Get Person Availability {#2-get-person-availability}
+### 2. Get Person Availability
 
 ```bash
 curl --location 'http://localhost:8080/meeting/getPersonAvailability/1'
 ```
 
-### 3. Check Meeting Collision {#3-check-meeting-collision-case-1}
+### 3. Check Meeting Collision Case 1
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
@@ -87,7 +87,7 @@ curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
 }'
 ```
 
-### 4. schedule Meeting With Date Time {#4-schedule-meeting-with-date-time}
+### 4. schedule Meeting With Date Time
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithDateTime' \
@@ -105,7 +105,7 @@ curl --location 'http://localhost:8080/meeting/scheduleMeetingWithDateTime' \
 }'
 ```
 
-### 5. Check Meeting Collision {#5-check-meeting-collision-case-2}
+### 5. Check Meeting Collision Case 2
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithDateTime' \

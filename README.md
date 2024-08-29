@@ -3,50 +3,49 @@
 ## Table of Contents
 
 - [Functionality](#functionality)
-- [Scheduling Inputs](#Scheduling Inputs)
+- [Scheduling Inputs](#scheduling-inputs)
 - [Collision Detection](#collision-detection)
 - [Meeting Rooms](#meeting-rooms)
 - [Participants](#participants)
 - [Availability Check](#availability-check)
 - [API Endpoints](#api-endpoints)
-    [i.   Schedule a Meeting with From-To Time](#1-schedule-a-meeting-with-from-to-time)
-    [ii.  Get Person Availability](#2-get-person-availability)
-    [iii. Check Meeting Collision (Case 1)](#3-check-meeting-collision-case-1)
-    [iv.  Schedule a Meeting with Date and Time (Alternative Example 1)](#4-schedule-a-meeting-with-date-and-time-alternative-example-1)
-    [v.   Check Meeting Collision (Case 2)](#5-check-meeting-collision-case-2)
+    - [i. Schedule a Meeting with From-To Time](#1-schedule-a-meeting-with-from-to-time)
+    - [ii. Get Person Availability](#2-get-person-availability)
+    - [iii. Check Meeting Collision (Case 1)](#3-check-meeting-collision-case-1)
+    - [iv. Schedule a Meeting with Date and Time](#4-schedule-meeting-with-date-time)
+    - [v. Check Meeting Collision (Case 2)](#5-check-meeting-collision-case-2)
 - [Controller Documentation](src/main/java/com/meet/controller/README.md)
 - [Service Documentation](src/main/java/com/meet/service/README.md)
 - [Repository Documentation](src/main/java/com/meet/repository/README.md)
 - [Utility Documentation](src/main/java/com/meet/util/README.md)
 - [Entity Documentation](src/main/java/com/meet/entity/README.md)
 
+## Functionality
+Meeting scheduler REST API.
 
-**Functionality** {#functionality}: Meeting scheduler REST API.
-
-**Scheduling Inputs**:
+## Scheduling Inputs
   - Schedule meetings using:
     - Day, time, and period.
-    - From time to to time.
+    - From time to time.
 
-**Collision Detection**:
+## Collision Detection
   - Detect scheduling conflicts for both:
     - The host.
     - Participants.
 
-**Meeting Rooms**:
+## Meeting Rooms
   - Configure the number of meeting rooms as a parameter.
 
-**Participants**:
+## Participants
   - Add new participants to an existing meeting.
   - Collision detection for newly added participants.
 
-**Availability Check**:
+## Availability Check
   - Check availability based on a person’s existing meetings.
-
 
 ## Sample Postman Curls to test the API
 
-### 1. Schedule a Meeting with From-To Time
+### 1. Schedule a Meeting with From-To Time {#1-schedule-a-meeting-with-from-to-time}
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
@@ -64,13 +63,13 @@ curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
 }'
 ```
 
-### 2. Get Person Availability
+### 2. Get Person Availability {#2-get-person-availability}
 
 ```bash
 curl --location 'http://localhost:8080/meeting/getPersonAvailability/1'
 ```
 
-### 3. Check Meeting Collision
+### 3. Check Meeting Collision {#3-check-meeting-collision-case-1}
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
@@ -88,7 +87,7 @@ curl --location 'http://localhost:8080/meeting/scheduleMeetingWithFromToTime' \
 }'
 ```
 
-### 4. Check Meeting Collision
+### 4. schedule Meeting With Date Time {#4-schedule-meeting-with-date-time}
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithDateTime' \
@@ -106,7 +105,7 @@ curl --location 'http://localhost:8080/meeting/scheduleMeetingWithDateTime' \
 }'
 ```
 
-### 5. Check Meeting Collision
+### 5. Check Meeting Collision {#5-check-meeting-collision-case-2}
 
 ```bash
 curl --location 'http://localhost:8080/meeting/scheduleMeetingWithDateTime' \

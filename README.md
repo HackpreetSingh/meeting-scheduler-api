@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Functionality](#functionality)
-- [Scheduling Inputs](#scheduling-inputs)
+- [Scheduling Inputs](#Scheduling Inputs)
 - [Collision Detection](#collision-detection)
 - [Meeting Rooms](#meeting-rooms)
 - [Participants](#participants)
@@ -11,9 +11,9 @@
 - [API Endpoints](#api-endpoints)
     [i.   Schedule a Meeting with From-To Time](#1-schedule-a-meeting-with-from-to-time)
     [ii.  Get Person Availability](#2-get-person-availability)
-    [iii. Check Meeting Collision (Alternative Example)](#3-check-meeting-collision-alternative-example)
+    [iii. Check Meeting Collision (Case 1)](#3-check-meeting-collision-case-1)
     [iv.  Schedule a Meeting with Date and Time (Alternative Example 1)](#4-schedule-a-meeting-with-date-and-time-alternative-example-1)
-    [v.   Schedule a Meeting with Date and Time (Alternative Example 2)](#5-schedule-a-meeting-with-date-and-time-alternative-example-2)
+    [v.   Check Meeting Collision (Case 2)](#5-check-meeting-collision-case-2)
 - [Controller Documentation](src/main/java/com/meet/controller/README.md)
 - [Service Documentation](src/main/java/com/meet/service/README.md)
 - [Repository Documentation](src/main/java/com/meet/repository/README.md)
@@ -21,26 +21,26 @@
 - [Entity Documentation](src/main/java/com/meet/entity/README.md)
 
 
-- **Functionality**: Meeting scheduler REST API.
+**Functionality** {#functionality}: Meeting scheduler REST API.
 
-- **Scheduling Inputs**:
+**Scheduling Inputs**:
   - Schedule meetings using:
     - Day, time, and period.
     - From time to to time.
 
-- **Collision Detection**:
+**Collision Detection**:
   - Detect scheduling conflicts for both:
     - The host.
     - Participants.
 
-- **Meeting Rooms**:
+**Meeting Rooms**:
   - Configure the number of meeting rooms as a parameter.
 
-- **Participants**:
+**Participants**:
   - Add new participants to an existing meeting.
   - Collision detection for newly added participants.
 
-- **Availability Check**:
+**Availability Check**:
   - Check availability based on a person’s existing meetings.
 
 

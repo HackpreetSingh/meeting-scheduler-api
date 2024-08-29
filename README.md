@@ -8,7 +8,7 @@
 - [Meeting Rooms](#meeting-rooms)
 - [Participants](#participants)
 - [Availability Check](#availability-check)
-- [API Endpoints](#api-endpoints)
+- [API Endpoints](#sample-postman-curls-to-test-the-api)
     - [i. Schedule a Meeting with From-To Time](#1-schedule-a-meeting-with-from-to-time)
     - [ii. Get Person Availability](#2-get-person-availability)
     - [iii. Check Meeting Collision (Case 1)](#3-check-meeting-collision-case-1)
